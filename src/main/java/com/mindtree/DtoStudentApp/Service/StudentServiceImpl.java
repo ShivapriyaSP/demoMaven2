@@ -32,6 +32,7 @@ public class StudentServiceImpl implements StudentService{
 		st.setDate(new Date());
 		stR = studentrepository.save(st);
 		stdto = mapper.map(stR, StudentDto.class);
+		System.out.println("auto build test in jenkins");
 	}
 
 	@Override
